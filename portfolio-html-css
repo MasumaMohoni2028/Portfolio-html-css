@@ -1,0 +1,310 @@
+///index.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuma Rahman, Web developer, programmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar ">
+       <nav> 
+        Masuma
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/intro.html">My Intro</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+            
+        </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="hamburger">
+            <img class="ham" src="images/ham.png" alt=""width="23">
+            <img class ="cross" src="images/cross.png" alt=""width="23">
+        </div>
+        <div class ="infoContainer">
+            <div class="devInfo">
+                <div class="hello">Hi, I am </div>
+                <div class="name">Masuma Rahman Mohoni</div>
+                <div class="about">developer, Enterpreneur, programmer </div>
+                <div class="moreabout">I live in Bangladesh and I am a student of Jahangirnagar University which is located in Savar,Dhaka </div>
+                <div class="buttons">
+                    <a href="/cv.txt" target="_blank">
+                    <button >Download Cv</button></a>
+                    <a href="/contact.html"><button>Contact me</button></a>
+                </div>
+            </div>
+            <div class="devPic"><img src="images/dev.png" alt="Masuma Rahman"width="250" height="410"></div>
+        </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+///contact.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuma Rahman, Web developer, programmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar slidebarGo">
+       <nav> 
+        Masuma
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/intro.html">My Intro</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+            
+        </ul>
+        </nav>
+    </div>
+    <div class="main">
+       <div class="contactform">
+        <h1>Contact me for work or general enquirie.</h1>
+        <form>
+            <div class="mb-3">
+              <label for="clientemail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+              <div id="emailHelp" class="form-text">We'll never share your email & phone number with anyone else.</div>
+            </div>
+            <div class="mb-3">
+              <label for="clientphone" class="form-label">Phone</label>
+              <input type="phone" class="form-control" id="clientphone">
+            </div>
+            <div class="mb-3">
+                <label for="clientemail" class="form-label">Enquiry</label>
+                <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp">
+                </div>
+            <div class="mb-3" id="form-check">
+              <input type="checkbox" class="form-check-input" id="isclient">
+              <label class="form-check-label" for="isclient">I want to work on a project with you!</label>
+            </div>
+            <div class="buttons"></div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+       </div>
+    </div>
+    </div>
+</body>
+</html>
+///blog.html:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masuma Rahman, Web developer, programmer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <div class="sidebar slidebarGo">
+       <nav> 
+        Masuma
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/intro.html">My Intro</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/blog.html">Blog</a></li>
+            <li><a href="/contact.html">Contact me</a></li>
+            
+        </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <div class="blogcontainer"></div>
+        <h1>Blogs by Masuma</h1>
+        <div class="blogitem">
+        <h2>Learn Javascript in funway!</h2>
+        <p>Paragraph to write</p>
+        <button class="buttons button">Read More</button>
+    </div>
+        <div class="blogitem">
+        <h2>Learn Javascript in funway!</h2>
+        <p>Paragraph to write</p>
+        <button class="buttons button">Read More</button>
+    </div>
+        <div class="blogitem">
+        <h2>Learn Javascript in funway!</h2>
+        <p>Paragraph to write</p>
+        <button class="buttons button">Read More</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
+////bakigulao akivabe file khule desighn krbo.main indes.html ar style.css
+#style.css:
+*{
+    margin: 0;
+    padding: 5px;
+}
+.sidebar{
+    background-color: rgb(185, 181, 181);
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+} 
+.sidebar nav{
+    padding: 45px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 16px;
+    padding: 33px;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(39, 73, 92);
+    
+} 
+.main{
+    background-color: white;
+    width: 90vw;
+}
+.container{
+    display: flex;
+}
+.infoContainer{
+    background-color: rgb(185, 181, 181);
+    height: 58vh;
+    width: 70vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-family: 'Courier New', Courier, monospace;
+}
+.hello{
+    font-size: 65px;
+}
+.name{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: cursive;
+}
+
+
+.about{
+    font-size: 40px;
+}
+.moreabout{
+    font-size: 22px;
+    margin-top: 23px;
+}
+.buttons{
+    margin-top: 34px;
+}
+.buttons button{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(10, 11, 11);
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 3px;
+    cursor: pointer;
+
+}
+.buttons button:hover{
+    color: grey;
+    background-color: white;
+
+}
+.devpic img {
+    height: 58px;
+}
+.contactform{
+    padding: 20 34px;
+    padding-top: 134px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.contactform h1{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 12px 0;
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+flex-direction: row;
+}
+#form-check input{
+    width: 24px;
+    margin: 3px 0;
+}
+.blogitem{
+    margin: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+ h1{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 23px;
+}
+ p{
+    font-family: 'Courier New', Courier, monospace;
+}
+.intro h2{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 12px;
+}
+.intro p{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 12px;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.slidebarGo{
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+.cross{
+    margin-left: 155px;
+}
+/* @media (max-width: 12000px) {
+   *{ background-color: rgb(167, 166, 166);
+   }
+   /* .slidebar{
+    transform: translate(-443px, 0px);
+    position: absolute; */
+   }
+  /* }
+   */ 
